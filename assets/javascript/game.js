@@ -81,10 +81,12 @@ function game(position, robot=20){
             if(robotPosition == -1){
                 window.alert('Você bateu! Mais sorte da próxima vez');
                 startGame.disabled = false;
+                window.location.reload();
                 return false;
             }else if(obstacles.includes(robotPosition)){
                 window.alert('Você bateu! Mais sorte da próxima vez');
                 startGame.disabled = false;
+                window.location.reload();
                 return false;
             }else if(robotPosition == 4){
                 window.alert('Parabéns, você dominou a construção de algorítimos!');
