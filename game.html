@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LogiSpark</title>
+    <link rel="stylesheet" href="./assets/css/game.css">
+</head>
+<body>
+    <div>
+        <div class="game-border">
+            <div class="game-container">
+                <div class="panel">
+                    <!-- instruções -->
+                    <h1 class="game-title">Como jogar:</h1>
+                    <ul class="game-instructions">
+                        <li>Observe atentamente o tabuleiro;</li>
+                        <li>Utilize o painel de opções para construir seu algorítimo;</li>
+                        <li>Após construir seu código, clique em "Start";</li>
+                        <li>O objetivo é fazer o bloco vermelho chegar até o bloco azul sem colidir com nenhum bloco intermediário;</li>
+                        <li>para remover um código, clique sobre ele no painel do algorítimo;</li>
+                        <li>Boa sorte!</li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <div id="game-board">
+                        <div id="0"></div>
+                        <div id="1"></div>
+                        <div id="2"></div>
+                        <div id="3"></div>
+                        <div id="4" class="final"></div>
+
+                        <div id="5"></div>
+                        <div id="6"></div>
+                        <div id="7"></div>
+                        <div id="8"></div>
+                        <div id="9"></div>
+
+                        <div id="10"></div>
+                        <div id="11"></div>
+                        <div id="12"></div>
+                        <div id="13"></div>
+                        <div id="14"></div>
+
+                        <div id="15"></div>
+                        <div id="16"></div>
+                        <div id="17"></div>
+                        <div id="18"></div>
+                        <div id="19"></div>
+
+                        <div id="20" class="robot"></div>
+                        <div id="21"></div>
+                        <div id="22"></div>
+                        <div id="23"></div>
+                        <div id="24"></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h1 class="game-title">Algorítimo:</h1>
+                    <div id="alg-board">
+                        <div id="algorithm"></div>
+                    </div>
+                </div>
+                <div class="panel options">
+                    <h1 class="game-title">Opções:</h1>
+                    <div id="opt-board">
+                        <button id="right-one">1x <i class="fa-solid fa-right-long"></i></button>
+                        <button id="left-one">1x <i class="fa-solid fa-left-long"></i></button>
+                        <button id="up-one">1x <i class="fa-solid fa-up-long"></i></button>
+                        <button id="down-one">1x <i class="fa-solid fa-down-long"></i></button>
+                        <button id="right-two">2x <i class="fa-solid fa-right-long"></i></button>
+                        <button id="left-two">2x <i class="fa-solid fa-left-long"></i></button>
+                        <button id="up-two">2x <i class="fa-solid fa-up-long"></i></button>
+                        <button id="down-two">2x <i class="fa-solid fa-down-long"></i></button>
+                    </div>
+                    <button id="start-game">Start <i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/javascript/game.js"></script>
+</body>
+</html>
